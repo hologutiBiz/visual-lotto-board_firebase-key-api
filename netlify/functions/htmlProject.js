@@ -5,6 +5,7 @@ const allowedOrigins = [
     "https://app.visuallottoboard.com",
     "https://premier-lotto-babaijebu-results.visuallottoboard.com",
     "https://lottoclassificationchart.visuallottoboard.com",
+    "http://127.0.0.1:5500",
 ]
 
 exports.handler = async function(event) {

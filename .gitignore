@@ -2,3 +2,5 @@ node_modules
 
 # render
 render/.env
+# Local Netlify folder
+.netlify
