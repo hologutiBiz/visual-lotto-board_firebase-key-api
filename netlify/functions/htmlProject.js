@@ -14,12 +14,20 @@ exports.handler = async function(event) {
     if (!allowedOrigins.includes(origin)) {
         return {
             statusCode: 403,
+            headers: {
+                "Access-Control-Allow-Origin": origin,
+                "Content-Type": "application/json"
+            },
             body: "Unauthorized"
         };
     }
 
     return {
         statusCode: 200,
+        headers: {
+            "Access-Control-Allow-Origin": origin,
+            "Content-Type": "application/json"
+        },
         body: JSON.stringify(firebaseConfig)
     };
 };
