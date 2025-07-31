@@ -1,2 +1,2 @@
-const { firebaseConfig } = require("../utils/firebaseConfig");
-module.exports = firebaseConfig;
+const { getFirebaseConfig } = require("../utils/firebaseConfig");
+module.exports = getFirebaseConfig;

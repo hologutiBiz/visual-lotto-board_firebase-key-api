@@ -1,4 +1,4 @@
-const { firebaseConfig } = require("../../utils/firebaseConfig");
+const { getFirebaseConfig } = require("../../utils/getFirebaseConfig");
 
 const allowedOrigins = [
     "https://visuallottoboard.com",
@@ -12,6 +12,7 @@ const allowedOrigins = [
 
 exports.handler = async function(event) {
     const origin = event.headers.origin;
+    const appName = event.queryStringParameters?.app || "default";
 
     const headers = {
         ...(allowedOrigins && { "Access-Control-Allow-Origin": origin }),
@@ -38,6 +39,8 @@ exports.handler = async function(event) {
             body: JSON.stringify({ message: "Unauthorized" })
         };
     }
+
+    const firebaseConfig = getFirebaseConfig(appName);
 
     return {
         statusCode: 200,

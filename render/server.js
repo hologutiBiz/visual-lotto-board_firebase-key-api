@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
-const firebaseConfig = require("./firebase");
+const getFirebaseConfig = require("./firebase");
 
 const app = express();
 const port = process.env.PORT || 1000;
@@ -26,12 +26,15 @@ app.use(cors({
 
 app.get("/firebase-config", (req, res) => {
     const origin = req.headers.origin;
+    const appName = req.query.app;
 
-    if (allowedDomains.includes(origin)) {
-        return res.json(firebaseConfig);
-    } else {
+    if (!allowedDomains.includes(origin)) {
         return res.status(403).json({ error: "Unauthorized"});
     }
+
+    const config = getFirebaseConfig(appName);
+
+    return res.json(config);
 });
 
 // Health check route
