@@ -12,6 +12,8 @@ const allowedOrigins = [
 
 exports.handler = async function(event) {
     const origin = event.headers.origin;
+    console.log("Request Origin:", origin);
+
     const appName = event.queryStringParameters?.app || "default";
 
     const headers = {
