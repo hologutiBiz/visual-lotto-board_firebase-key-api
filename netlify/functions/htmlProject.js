@@ -1,4 +1,4 @@
-const { getFirebaseConfig } = require("../../utils/getFirebaseConfig");
+const { getFirebaseConfig } = require("./firebaseConfig");
 
 const allowedOrigins = [
     "https://visuallottoboard.com",
@@ -7,7 +7,7 @@ const allowedOrigins = [
     "https://lottoclassificationchart.visuallottoboard.com",
     "https://pro-forecast-central-panel.visuallottoboard.com",
     "http://127.0.0.1:5500",
-    "https://studio.firebase.google.com/pro-forecast-panel-71306294"
+    //"https://studio.firebase.google.com/pro-forecast-panel-71306294"
 ]
 
 exports.handler = async function(event) {
