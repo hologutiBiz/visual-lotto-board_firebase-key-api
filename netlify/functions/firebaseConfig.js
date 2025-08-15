@@ -1,13 +1,13 @@
 
 function getFirebaseConfig(appName) {
   const appIds = {
-    // proForecastPanel: process.env.FIREBASE_APP_ID_PRO_FORECAST_PANEL,
+    proForecastPanel: process.env.FIREBASE_APP_ID_PRO_FORECAST_PANEL,
     lottoforecastWebApp: process.env.FIREBASE_APP_ID_LOTTO_FORECAST_WEB_APP,
     default: process.env.FIREBASE_APP_ID
   };
 
   const measurementIds = {
-    // proForecastPanel: process.env.FIREBASE_MEASUREMENT_ID_PRO_FORECAST_PANEL,
+    proForecastPanel: process.env.FIREBASE_MEASUREMENT_ID_PRO_FORECAST_PANEL,
     lottoforecastWebApp: process.env.FIREBASE_MEASUREMENT_ID_LOTTO_FORECAST_WEB_APP,
     default: process.env.FIREBASE_MEASUREMENT_ID
   }
