@@ -12,6 +12,7 @@ const allowedDomains = [
     "https://app.visuallottoboard.com",
     "https://premier-lotto-babaijebu-results.visuallottoboard.com",
     "https://lottoclassificationchart.visuallottoboard.com",
+    "https://basic.app.visuallottoboard.com"
 ]
 
 app.use(cors({

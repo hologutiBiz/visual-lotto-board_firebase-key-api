@@ -6,7 +6,8 @@ const allowedOrigins = [
     "https://premier-lotto-babaijebu-results.visuallottoboard.com",
     "https://lottoclassificationchart.visuallottoboard.com",
     "https://pro-forecast-central-panel.visuallottoboard.com",
-    "http://127.0.0.1:5500",
+    "https://basic.app.visuallottoboard.com"
+    // "http://127.0.0.1:5500",
     //"https://studio.firebase.google.com/pro-forecast-panel-71306294"
 ]
 
