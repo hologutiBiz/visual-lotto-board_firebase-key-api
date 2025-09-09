@@ -7,7 +7,9 @@ const allowedOrigins = [
     "https://lottoclassificationchart.visuallottoboard.com",
     "https://pro-forecast-central-panel.visuallottoboard.com",
     "https://basic.app.visuallottoboard.com",
-    "http://127.0.0.1:5500",
+    "https://jazzy-moonbeam-74f2a6.netlify.app"
+
+    // "http://127.0.0.1:5500",
     //"https://studio.firebase.google.com/pro-forecast-panel-71306294"
 ]
 
