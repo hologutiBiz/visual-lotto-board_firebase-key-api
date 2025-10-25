@@ -8,15 +8,11 @@ const allowedOrigins = [
     "https://pro-forecast-central-panel.visuallottoboard.com",
     "https://basic.app.visuallottoboard.com",
     "https://jazzy-moonbeam-74f2a6.netlify.app"
-
-    // "http://127.0.0.1:5500",
-    //"https://studio.firebase.google.com/pro-forecast-panel-71306294"
 ]
 
 exports.handler = async function(event) {
     const origin = event.headers.origin;
-    console.log("Request Origin:", origin);
-
+    const isAllowedOrigin = allowedOrigins.includes(origin);
     const appName = event.queryStringParameters?.app || "default";
 
     const headers = {
@@ -36,8 +32,10 @@ exports.handler = async function(event) {
         }
     }
 
+    console.log("Request Origin:", origin);
 
-    if (!allowedOrigins.includes(origin)) {
+    if (!isAllowedOrigin) {
+        console.warn("REQUEST FROM UNAUTHORIZED ORIGIN:", origin)
         return {
             statusCode: 403,
             headers,
