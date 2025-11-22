@@ -7,7 +7,8 @@ const allowedOrigins = [
     "https://lottoclassificationchart.visuallottoboard.com",
     "https://pro-forecast-central-panel.visuallottoboard.com",
     "https://basic.app.visuallottoboard.com",
-    "https://jazzy-moonbeam-74f2a6.netlify.app"
+    "https://jazzy-moonbeam-74f2a6.netlify.app",
+    "http://127.0.0.1:5500"
 ]
 
 exports.handler = async function(event) {
