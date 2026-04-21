@@ -9,10 +9,10 @@ const port = process.env.PORT || 1000;
 
 const allowedDomains = [
     "https://visuallottoboard.com",
+    "https://lottoforecast.visuallottoboard.com",
     "https://app.visuallottoboard.com",
     "https://premier-lotto-babaijebu-results.visuallottoboard.com",
     "https://lottoclassificationchart.visuallottoboard.com",
-    "https://basic.app.visuallottoboard.com"
 ]
 
 app.use(cors({

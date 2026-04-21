@@ -2,11 +2,11 @@ const { getFirebaseConfig } = require("./firebaseConfig");
 
 const allowedOrigins = [
     "https://visuallottoboard.com",
+    "https://lottoforecast.visuallottoboard.com",
     "https://app.visuallottoboard.com",
     "https://premier-lotto-babaijebu-results.visuallottoboard.com",
     "https://lottoclassificationchart.visuallottoboard.com",
     "https://pro-forecast-central-panel.visuallottoboard.com",
-    "https://basic.app.visuallottoboard.com",
     "https://jazzy-moonbeam-74f2a6.netlify.app",
     "https://visual-lotto-board-results-file.netlify.app"
     // "http://127.0.0.1:5500"
